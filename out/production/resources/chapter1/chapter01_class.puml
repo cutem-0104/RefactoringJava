@@ -1,0 +1,148 @@
+@startuml
+
+class Movie {
+    priceCode: int
+}
+
+class Rental {
+    daysRented: int
+}
+
+class Customer {
+    statement()
+}
+
+/' Customerは複数のRentalを持つ '/
+Movie "1" <-l- "*" Rental
+/' Movieは複数のRentalをもつ '/
+Rental "*" <-l- "1" Customer
+
+@enduml
+
+@startuml
+
+class Movie {
+    priceCode: int
+}
+
+class Rental {
+    daysRented: int
+    getCharge()
+    getfrequentRenterPoints()
+}
+
+class Customer {
+    statement()
+}
+
+/' Customerは複数のRentalを持つ '/
+Movie "1" <-l- "*" Rental
+/' Movieは複数のRentalをもつ '/
+Rental "*" <-l- "1" Customer
+
+@enduml
+
+@startuml
+
+class Movie {
+    priceCode: int
+}
+
+class Rental {
+    daysRented: int
+    getCharge()
+    getfrequentRenterPoints()
+}
+
+class Customer {
+    statement()
+    getTotalCharge()
+    getTotalFrequentRenterPoints()
+}
+
+/' Customerは複数のRentalを持つ '/
+Movie "1" <-l- "*" Rental
+/' Movieは複数のRentalをもつ '/
+Rental "*" <-l- "1" Customer
+
+@enduml
+
+@startuml
+
+class Movie {
+    priceCode: int
+    getCharge(days: int)
+    getFrequentRenterPoints(days: int)
+}
+
+class Rental {
+    daysRented: int
+    getCharge()
+    getfrequentRenterPoints()
+}
+
+class Customer {
+    statement()
+    getTotalCharge()
+    getTotalFrequentRenterPoints()
+
+}
+
+/' Customerは複数のRentalを持つ '/
+Movie "1" <-l- "*" Rental
+/' Movieは複数のRentalをもつ '/
+Rental "*" <-l- "1" Customer
+
+@enduml
+
+@startuml
+
+class Movie {
+    priceCode: int
+    getCharge(days: int)
+    getFrequentRenterPoints(days: int)
+}
+
+class Rental {
+    daysRented: int
+    getCharge()
+    getfrequentRenterPoints()
+}
+
+class Customer {
+    statement()
+    htmlStatement()
+    getTotalCharge()
+    getTotalFrequentRenterPoints()
+
+}
+
+class Price {
+    {abstract} getCharge(days: int)
+    getFrequentRenterPoints(days: int)
+}
+
+class ChildrensPrice {
+    getCharge(days: int)
+}
+
+class RegularPrice {
+    getCharge(days: int)
+}
+
+class NewReleasePrice {
+    getCharge(days: int)
+    getFrequentRenterPoints(days: int)
+}
+
+Price <|-d- ChildrensPrice
+Price <|-d- RegularPrice
+Price <|-d- NewReleasePrice
+
+Price "1" <-l- Movie
+/' Customerは複数のRentalを持つ '/
+Movie "1" <-l- "*" Rental
+/' Movieは複数のRentalをもつ '/
+Rental "*" <-u- "1" Customer
+
+@enduml

@@ -1,0 +1,60 @@
+@startuml
+
+-> aCustomer: statement
+activate aCustomer
+aCustomer -> aCustomer: *[for all rentals]
+activate aCustomer
+aCustomer -> aRental: getMovie
+aCustomer -> aMovie: getPriceCode
+aCustomer -> aRental: getDaysRented
+deactivate aCustomer
+
+deactivate aCustomer
+
+@enduml
+
+@startuml
+
+-> aCustomer: statement
+activate aCustomer
+aCustomer -> aCustomer: *[for all rentals]
+activate aCustomer
+aCustomer -> aRental: getCharge
+activate aRental
+aRental -> aMovie: getPriceCode
+deactivate aRental
+deactivate aCustomer
+aCustomer -> aRental: getFrequentRenterPoints
+activate aRental
+aRental -> aMovie: getPriceCode
+deactivate aRental
+deactivate aCustomer
+
+@enduml
+
+@startuml
+
+-> aCustomer: statement
+activate aCustomer
+
+    aCustomer -> aCustomer: getTotalCharge
+    activate aCustomer
+        aCustomer -> aRental: *[for all rentals] getCharge
+        activate aRental
+        aRental -> aMovie: getPriceCode
+        aMovie -> aPrice: getCharge(days)
+        deactivate aRental
+    deactivate aCustomer
+
+    aCustomer -> aCustomer: getTotalFrequentRenterPoints
+    activate aCustomer
+    aCustomer -> aRental: *[for all rentals] getFrequentRenterPoints
+        activate aRental
+        aRental -> aMovie: getPriceCode
+        aMovie -> aPrice: getFrequentRenterPoints(days)
+        deactivate aRental
+    deactivate aCustomer
+
+deactivate aCustomer
+
+@enduml

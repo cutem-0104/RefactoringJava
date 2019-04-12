@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // UnitTestにはtestCompileキーワードを使用
+    compile 'junit:junit:4.12'
+
+    // PowerMockのライブラリを指定
+    compile 'org.powermock:powermock-module-junit4:1.6.2'
+    compile 'org.powermock:powermock-api-mockito:1.6.2'
+}
