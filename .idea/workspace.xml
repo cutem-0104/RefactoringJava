@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae75cf9c-6b11-4095-8cc1-aad2e91cd0b2" name="Default Changelist" comment="" />
+    <list default="true" id="ae75cf9c-6b11-4095-8cc1-aad2e91cd0b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/META-INF/refactoring_main.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/chapter6/MethodExtraction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/chapter6/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/classes/META-INF/refactoring_main.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/classes/chapter6/MethodExtractionTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chapter6/MethodExtraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chapter6/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chapter6/MethodExtractionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter4/FileReaderTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter4/FileReaderTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/chapter4/FileReaderTesterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter4/FileReaderTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chapter4/FileReaderTester.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -12,9 +26,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/refactoring$PriceTest.ic" NAME="PriceTest Coverage Results" MODIFIED="1555050833288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>chapter1.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/refactoring$CustomerTest.ic" NAME="CustomerTest Coverage Results" MODIFIED="1555050798121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>chapter1.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/refactoring$FileReaderTester_testRead.ic" NAME="FileReaderTester.testRead Coverage Results" MODIFIED="1555039285835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>chapter4.*</FILTER>
     </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="209" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -42,10 +65,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="bat" value="1" />
           <entry key="class" value="1" />
-          <entry key="gradle" value="2" />
-          <entry key="gradlew" value="1" />
-          <entry key="java" value="26" />
+          <entry key="gitignore" value="1" />
+          <entry key="gradle" value="3" />
+          <entry key="gradlew" value="3" />
+          <entry key="java" value="38" />
+          <entry key="properties" value="1" />
           <entry key="puml" value="4" />
           <entry key="txt" value="2" />
         </counts>
@@ -53,10 +79,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="Groovy" value="2" />
-          <entry key="JAVA" value="26" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Groovy" value="3" />
+          <entry key="JAVA" value="38" />
+          <entry key="PLAIN_TEXT" value="7" />
           <entry key="PlantUML file" value="4" />
+          <entry key="Properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -64,7 +91,7 @@
           <entry key="class" value="7" />
           <entry key="dummy" value="4" />
           <entry key="gradle" value="6" />
-          <entry key="java" value="9340" />
+          <entry key="java" value="11039" />
           <entry key="puml" value="1604" />
           <entry key="txt" value="3" />
         </counts>
@@ -73,7 +100,7 @@
         <counts>
           <entry key="CLASS" value="7" />
           <entry key="Groovy" value="6" />
-          <entry key="JAVA" value="9340" />
+          <entry key="JAVA" value="11039" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="PlantUML file" value="1604" />
         </counts>
@@ -84,53 +111,160 @@
     <favorites_list name="refactoring" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/chapter1/Price.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#171#172#0" expanded="true" />
-                <element signature="e#195#196#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/chapter4/FileReaderTester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#143#144#0" expanded="true" />
-                <element signature="e#163#164#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/chapter4/chapter04_class.puml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.54941255">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/chapter1/Movie.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="336">
+                  <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+                  <folding>
+                    <element signature="e#968#969#0" expanded="true" />
+                    <element signature="e#1019#1020#0" expanded="true" />
+                    <element signature="e#1070#1071#0" expanded="true" />
+                    <element signature="e#1135#1136#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/chapter1/Price.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="308">
+                  <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+                  <folding>
+                    <element signature="e#171#172#0" expanded="true" />
+                    <element signature="e#195#196#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/chapter6/MethodExtractionTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="275">
+                  <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="42">
+                  <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="28">
+                  <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/chapter1/Customer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="98">
+                  <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="43" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#273#274#0" expanded="true" />
+                    <element signature="e#313#314#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/chapter4/chapter04_class.puml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="154">
+                  <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/build.gradle">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="280">
+                  <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/chapter6/Order.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="28">
+                  <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/chapter6/Order.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="56">
+                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+                  <folding>
+                    <element signature="e#72#73#0" expanded="true" />
+                    <element signature="e#108#109#0" expanded="true" />
+                    <element signature="e#168#169#0" expanded="true" />
+                    <element signature="e#197#198#0" expanded="true" />
+                    <element signature="e#241#242#0" expanded="true" />
+                    <element signature="e#277#278#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/chapter1/PriceTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="196">
+                  <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/chapter6/MethodExtraction.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="429">
+                  <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#225#226#0" expanded="true" />
+                    <element signature="e#255#256#0" expanded="true" />
+                    <element signature="e#307#308#0" expanded="true" />
+                    <element signature="e#345#346#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -157,6 +291,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="d7918dae-db42-4fe4-876a-281667f1669b" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -552,6 +689,12 @@
         <option value="$PROJECT_DIR$/src/test/java/chapter4/FileReaderTesterTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/chapter4/data.txt" />
         <option value="$PROJECT_DIR$/src/main/java/chapter4/FileReaderTester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chapter6/MethodEtractionLoccalVariable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chapter6/MethodExtractionNoLocalVariable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chapter6/MethodExtraction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chapter6/Order.java" />
+        <option value="$PROJECT_DIR$/src/test/java/chapter6/MethodExtractionTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -561,11 +704,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1910" />
+    <option name="y" value="25" />
+    <option name="width" value="1446" />
+    <option name="height" value="1019" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -583,50 +726,6 @@
             </path>
             <path>
               <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="refactoring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="refactoring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="refactoring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="refactoring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="refactoring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="refactoring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="refactoring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
               <item name="外部ライブラリー" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -641,7 +740,7 @@
     <property name="SearchEverywhereHistoryKey" value="TestCase&#9;FILE&#9;jar://C:/Users/sgysh/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/junit/framework/TestCase.java&#10;chapter&#9;FILE&#9;file://C:/Users/sgysh/Programming/IdeaProjects/refactoring/src/main/resources/chapter1/chapter01_class.puml&#10;customer&#9;FILE&#9;file://C:/Users/sgysh/Programming/IdeaProjects/refactoring/src/main/java/chapter1/Customer.java&#10;Price&#9;FILE&#9;file://C:/Users/sgysh/Programming/IdeaProjects/refactoring/src/main/java/chapter1/Price.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555050185634" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555055427166" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -651,7 +750,7 @@
     <property name="project.structure.last.edited" value="モジュール" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2505747" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -685,96 +784,95 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FileReaderTester">
-    <configuration name="FileReaderTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter4.FileReaderTester" />
-      <module name="refactoring_main" />
+  <component name="RunManager" selected="JUnit.MethodExtractionTest">
+    <configuration name="CustomerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="refactoring_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter4.*" />
+          <option name="PATTERN" value="chapter1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="chapter1" />
+      <option name="MAIN_CLASS_NAME" value="chapter1.CustomerTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileReaderTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="refactoring_main" />
+    <configuration name="MethodExtractionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="refactoring_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter4.*" />
+          <option name="PATTERN" value="chapter6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="chapter4" />
-      <option name="MAIN_CLASS_NAME" value="chapter4.FileReaderTester" />
+      <option name="PACKAGE_NAME" value="chapter6" />
+      <option name="MAIN_CLASS_NAME" value="chapter6.MethodExtractionTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileReaderTester.testRead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="refactoring_main" />
+    <configuration name="MethodExtractionTest.testPrintBanner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="refactoring_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter4.*" />
+          <option name="PATTERN" value="chapter6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="chapter4" />
-      <option name="MAIN_CLASS_NAME" value="chapter4.FileReaderTester" />
-      <option name="METHOD_NAME" value="testRead" />
+      <option name="PACKAGE_NAME" value="chapter6" />
+      <option name="MAIN_CLASS_NAME" value="chapter6.MethodExtractionTest" />
+      <option name="METHOD_NAME" value="testPrintBanner" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileReaderTester.testReadAtEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="refactoring_main" />
+    <configuration name="MethodExtractionTest.testPrintDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="refactoring_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter4.*" />
+          <option name="PATTERN" value="chapter6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="chapter4" />
-      <option name="MAIN_CLASS_NAME" value="chapter4.FileReaderTester" />
-      <option name="METHOD_NAME" value="testReadAtEnd" />
+      <option name="PACKAGE_NAME" value="chapter6" />
+      <option name="MAIN_CLASS_NAME" value="chapter6.MethodExtractionTest" />
+      <option name="METHOD_NAME" value="testPrintDetails" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileReaderTester.testReadBoundaries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="refactoring_main" />
+    <configuration name="PriceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="refactoring_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter4.*" />
+          <option name="PATTERN" value="chapter1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="chapter4" />
-      <option name="MAIN_CLASS_NAME" value="chapter4.FileReaderTester" />
-      <option name="METHOD_NAME" value="testReadBoundaries" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="chapter1" />
+      <option name="MAIN_CLASS_NAME" value="chapter1.PriceTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.FileReaderTester" />
-      <item itemvalue="JUnit.FileReaderTester.testRead" />
-      <item itemvalue="JUnit.FileReaderTester" />
-      <item itemvalue="JUnit.FileReaderTester.testReadAtEnd" />
-      <item itemvalue="JUnit.FileReaderTester.testReadBoundaries" />
+      <item itemvalue="JUnit.CustomerTest" />
+      <item itemvalue="JUnit.PriceTest" />
+      <item itemvalue="JUnit.MethodExtractionTest.testPrintBanner" />
+      <item itemvalue="JUnit.MethodExtractionTest.testPrintDetails" />
+      <item itemvalue="JUnit.MethodExtractionTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FileReaderTester" />
-        <item itemvalue="JUnit.FileReaderTester.testReadBoundaries" />
-        <item itemvalue="JUnit.FileReaderTester.testReadAtEnd" />
-        <item itemvalue="Application.FileReaderTester" />
-        <item itemvalue="JUnit.FileReaderTester.testRead" />
+        <item itemvalue="JUnit.MethodExtractionTest" />
+        <item itemvalue="JUnit.MethodExtractionTest.testPrintBanner" />
+        <item itemvalue="JUnit.MethodExtractionTest.testPrintDetails" />
+        <item itemvalue="JUnit.PriceTest" />
+        <item itemvalue="JUnit.CustomerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -806,32 +904,11 @@
       <workItem from="1555030809060" duration="545000" />
       <workItem from="1555031390419" duration="13000" />
       <workItem from="1555031414640" duration="4000" />
-      <workItem from="1555032025073" duration="10659000" />
+      <workItem from="1555032025073" duration="15915000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FileReaderTester - 2019.04.12 at 13h 46m 30s.xml">
-      <configuration name="FileReaderTester" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileReaderTester - 2019.04.12 at 13h 58m 49s.xml">
-      <configuration name="FileReaderTester" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileReaderTester_testReadAtEnd - 2019.04.12 at 13h 59m 54s.xml">
-      <configuration name="FileReaderTester.testReadAtEnd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileReaderTester - 2019.04.12 at 14h 53m 01s.xml">
-      <configuration name="FileReaderTester" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileReaderTester_testReadBoundaries - 2019.04.12 at 14h 58m 43s.xml">
-      <configuration name="FileReaderTester.testReadBoundaries" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileReaderTester - 2019.04.12 at 14h 59m 22s.xml">
-      <configuration name="FileReaderTester" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileReaderTester - 2019.04.12 at 15h 10m 34s.xml">
-      <configuration name="FileReaderTester" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FileReaderTester - 2019.04.12 at 15h 12m 17s.xml">
       <configuration name="FileReaderTester" configurationId="JUnit" />
     </history-entry>
@@ -841,14 +918,36 @@
     <history-entry file="FileReaderTester - 2019.04.12 at 15h 13m 49s.xml">
       <configuration name="FileReaderTester" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CustomerTest - 2019.04.12 at 15h 33m 31s.xml">
+      <configuration name="CustomerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PriceTest - 2019.04.12 at 15h 34m 06s.xml">
+      <configuration name="PriceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MethodExtractionTest_testPrintBanner - 2019.04.12 at 16h 20m 11s.xml">
+      <configuration name="MethodExtractionTest.testPrintBanner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MethodExtractionTest_testPrintBanner - 2019.04.12 at 16h 20m 18s.xml">
+      <configuration name="MethodExtractionTest.testPrintBanner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MethodExtractionTest_testPrintDetails - 2019.04.12 at 16h 23m 09s.xml">
+      <configuration name="MethodExtractionTest.testPrintDetails" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MethodExtractionTest_testPrintBanner - 2019.04.12 at 16h 41m 07s.xml">
+      <configuration name="MethodExtractionTest.testPrintBanner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MethodExtractionTest - 2019.04.12 at 16h 44m 41s.xml">
+      <configuration name="MethodExtractionTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43780000" />
+    <option name="totallyTimeSpent" value="49036000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1910" y="25" width="1446" height="1019" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49718308" visible="true" weight="0.22867803" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49718308" visible="true" weight="0.30952382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="デザイナー" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -857,19 +956,19 @@
       <window_info id="UI デザイナー" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38069415" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39587852" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32890365" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.46529284" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.43050846" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.329718" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.329806" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32942432" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -909,38 +1008,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/mock/Util.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/mock/UtilTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/mock/Taishou.java" />
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chapter1/Rental.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chapter1/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding>
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chapter1/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="83" column="12" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -970,31 +1041,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chapter1/Price.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/chapter1/PriceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,18 +1086,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chapter4/FileReaderTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#143#144#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/chapter4/data.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -1062,10 +1100,147 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-455">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="280">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chapter1/Price.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chapter6/MethodEtractionLoccalVariable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chapter6/MethodExtractionNoLocalVariable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="44" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chapter1/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chapter1/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chapter4/FileReaderTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/chapter1/PriceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chapter6/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chapter6/MethodExtraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/chapter6/MethodExtractionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
