@@ -5,7 +5,7 @@ import java.util.Vector;
 
 public class MethodExtraction {
     private String _name = "name";
-    public Vector<Order> _orders = new Vector<>();
+    private Vector<Order> _orders = new Vector<>();
 
     public Vector<Order> getOrders() {
         return _orders;
@@ -37,6 +37,23 @@ public class MethodExtraction {
         printDetails(outstanding);
     }
 
+    void printOwing(double previousAmount) {
+        // バナーの印刷
+        printBanner();
+
+        // 未払い金の計算
+//        double outstanding = previousAmount * 1.2;
+//        Enumeration e = _orders.elements();
+//        while (e.hasMoreElements()) {
+//            Order each = (Order) e.nextElement();
+//            outstanding += each.getAmount();
+//        }
+        double outstanding = getOutstanding(previousAmount * 1.2);
+
+        // 明細の印刷
+        printDetails(outstanding);
+    }
+
     // ローカル変数を使わないメソッド抽出
     void printBanner() {
         System.out.println("*******************");
@@ -52,12 +69,23 @@ public class MethodExtraction {
 
     // ローカル変数の再代入
     double getOutstanding() {
+        double result = 0.0;
         Enumeration e = _orders.elements();
-        double outstanding = 0.0;
         while (e.hasMoreElements()) {
             Order each = (Order) e.nextElement();
-            outstanding += each.getAmount();
+            result += each.getAmount();
         }
-        return outstanding;
+        return result;
+    }
+
+    // ローカル変数の再代入 初期化
+    double getOutstanding(double initialValue) {
+        double result = initialValue;
+        Enumeration e = _orders.elements();
+        while (e.hasMoreElements()) {
+            Order each = (Order) e.nextElement();
+            result += each.getAmount();
+        }
+        return result;
     }
 }

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae75cf9c-6b11-4095-8cc1-aad2e91cd0b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/chapter6/MethodInlining.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chapter6/MethodInliningTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter6/MethodExtraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chapter6/MethodExtraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chapter6/MethodExtractionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chapter6/MethodExtractionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -17,15 +21,21 @@
     <SUITE FILE_PATH="coverage/refactoring$PriceTest.ic" NAME="PriceTest Coverage Results" MODIFIED="1555050833288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>chapter1.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/refactoring$MethodExtractionTest.ic" NAME="MethodExtractionTest Coverage Results" MODIFIED="1555057598695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>chapter6.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/refactoring$CustomerTest.ic" NAME="CustomerTest Coverage Results" MODIFIED="1555050798121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>chapter1.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/refactoring$refactoring_main__chapter6.ic" NAME="refactoring_main 内の chapter6 Coverage Results" MODIFIED="1555057575050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>chapter6.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/refactoring$FileReaderTester_testRead.ic" NAME="FileReaderTester.testRead Coverage Results" MODIFIED="1555039285835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>chapter4.*</FILTER>
     </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="209" />
+    <option name="myElementSize" value="116" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -58,7 +68,7 @@
           <entry key="gitignore" value="1" />
           <entry key="gradle" value="3" />
           <entry key="gradlew" value="3" />
-          <entry key="java" value="38" />
+          <entry key="java" value="40" />
           <entry key="properties" value="1" />
           <entry key="puml" value="4" />
           <entry key="txt" value="2" />
@@ -68,7 +78,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="38" />
+          <entry key="JAVA" value="40" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="PlantUML file" value="4" />
           <entry key="Properties" value="1" />
@@ -79,7 +89,7 @@
           <entry key="class" value="7" />
           <entry key="dummy" value="4" />
           <entry key="gradle" value="6" />
-          <entry key="java" value="11039" />
+          <entry key="java" value="11577" />
           <entry key="puml" value="1604" />
           <entry key="txt" value="3" />
         </counts>
@@ -88,7 +98,7 @@
         <counts>
           <entry key="CLASS" value="7" />
           <entry key="Groovy" value="6" />
-          <entry key="JAVA" value="11039" />
+          <entry key="JAVA" value="11577" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="PlantUML file" value="1604" />
         </counts>
@@ -99,7 +109,7 @@
     <favorites_list name="refactoring" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.54941255">
+    <splitter split-orientation="horizontal" split-proportion="0.4676525">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -133,8 +143,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/chapter6/MethodExtractionTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="275">
-                  <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+                <state relative-caret-position="434">
+                  <caret line="38" column="18" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="18" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -143,19 +153,28 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+            <entry file="file://$PROJECT_DIR$/src/main/java/chapter6/MethodInlining.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="42">
-                  <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+                <state relative-caret-position="56">
+                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+                  <folding>
+                    <element signature="e#172#173#0" expanded="true" />
+                    <element signature="e#222#223#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
+            <entry file="file://$PROJECT_DIR$/src/test/java/chapter6/MethodInliningTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="70">
-                  <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+                <state relative-caret-position="154">
+                  <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#176#177#0" expanded="true" />
+                    <element signature="e#244#245#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -237,8 +256,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/chapter6/MethodExtraction.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="429">
-                  <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+                <state relative-caret-position="378">
+                  <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#225#226#0" expanded="true" />
@@ -679,10 +698,12 @@
         <option value="$PROJECT_DIR$/src/main/java/chapter4/FileReaderTester.java" />
         <option value="$PROJECT_DIR$/src/main/java/chapter6/MethodEtractionLoccalVariable.java" />
         <option value="$PROJECT_DIR$/src/main/java/chapter6/MethodExtractionNoLocalVariable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/chapter6/MethodExtraction.java" />
         <option value="$PROJECT_DIR$/src/main/java/chapter6/Order.java" />
-        <option value="$PROJECT_DIR$/src/test/java/chapter6/MethodExtractionTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/chapter6/MethodExtraction.java" />
+        <option value="$PROJECT_DIR$/src/test/java/chapter6/MethodExtractionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chapter6/MethodInlining.java" />
+        <option value="$PROJECT_DIR$/src/test/java/chapter6/MethodInliningTest.java" />
       </list>
     </option>
   </component>
@@ -692,11 +713,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1910" />
-    <option name="y" value="25" />
-    <option name="width" value="1446" />
-    <option name="height" value="1019" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -714,6 +735,53 @@
             </path>
             <path>
               <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="refactoring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="refactoring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="refactoring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="refactoring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="refactoring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="refactoring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="refactoring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="refactoring" type="b2602c69:ProjectViewProjectNode" />
               <item name="外部ライブラリー" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -728,7 +796,7 @@
     <property name="SearchEverywhereHistoryKey" value="TestCase&#9;FILE&#9;jar://C:/Users/sgysh/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/junit/framework/TestCase.java&#10;chapter&#9;FILE&#9;file://C:/Users/sgysh/Programming/IdeaProjects/refactoring/src/main/resources/chapter1/chapter01_class.puml&#10;customer&#9;FILE&#9;file://C:/Users/sgysh/Programming/IdeaProjects/refactoring/src/main/java/chapter1/Customer.java&#10;Price&#9;FILE&#9;file://C:/Users/sgysh/Programming/IdeaProjects/refactoring/src/main/java/chapter1/Price.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555056250112" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555059863398" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -772,21 +840,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MethodExtractionTest">
-    <configuration name="CustomerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="refactoring_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chapter1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chapter1" />
-      <option name="MAIN_CLASS_NAME" value="chapter1.CustomerTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MethodInliningTest">
     <configuration name="MethodExtractionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="refactoring_test" />
       <extension name="coverage">
@@ -833,34 +887,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PriceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MethodInliningTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="refactoring_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter1.*" />
+          <option name="PATTERN" value="chapter6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="chapter1" />
-      <option name="MAIN_CLASS_NAME" value="chapter1.PriceTest" />
+      <option name="PACKAGE_NAME" value="chapter6" />
+      <option name="MAIN_CLASS_NAME" value="chapter6.MethodInliningTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="refactoring_main 内の chapter6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="refactoring_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chapter6" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CustomerTest" />
-      <item itemvalue="JUnit.PriceTest" />
       <item itemvalue="JUnit.MethodExtractionTest.testPrintBanner" />
       <item itemvalue="JUnit.MethodExtractionTest.testPrintDetails" />
       <item itemvalue="JUnit.MethodExtractionTest" />
+      <item itemvalue="JUnit.refactoring_main 内の chapter6" />
+      <item itemvalue="JUnit.MethodInliningTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MethodInliningTest" />
         <item itemvalue="JUnit.MethodExtractionTest" />
+        <item itemvalue="JUnit.refactoring_main 内の chapter6" />
         <item itemvalue="JUnit.MethodExtractionTest.testPrintBanner" />
         <item itemvalue="JUnit.MethodExtractionTest.testPrintDetails" />
-        <item itemvalue="JUnit.PriceTest" />
-        <item itemvalue="JUnit.CustomerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -892,49 +960,50 @@
       <workItem from="1555030809060" duration="545000" />
       <workItem from="1555031390419" duration="13000" />
       <workItem from="1555031414640" duration="4000" />
-      <workItem from="1555032025073" duration="16534000" />
+      <workItem from="1555032025073" duration="20112000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FileReaderTester - 2019.04.12 at 15h 12m 17s.xml">
-      <configuration name="FileReaderTester" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileReaderTester - 2019.04.12 at 15h 12m 37s.xml">
-      <configuration name="FileReaderTester" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileReaderTester - 2019.04.12 at 15h 13m 49s.xml">
-      <configuration name="FileReaderTester" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerTest - 2019.04.12 at 15h 33m 31s.xml">
-      <configuration name="CustomerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PriceTest - 2019.04.12 at 15h 34m 06s.xml">
-      <configuration name="PriceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MethodExtractionTest_testPrintBanner - 2019.04.12 at 16h 20m 11s.xml">
-      <configuration name="MethodExtractionTest.testPrintBanner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MethodExtractionTest_testPrintBanner - 2019.04.12 at 16h 20m 18s.xml">
-      <configuration name="MethodExtractionTest.testPrintBanner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MethodExtractionTest_testPrintDetails - 2019.04.12 at 16h 23m 09s.xml">
-      <configuration name="MethodExtractionTest.testPrintDetails" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MethodExtractionTest_testPrintBanner - 2019.04.12 at 16h 41m 07s.xml">
       <configuration name="MethodExtractionTest.testPrintBanner" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MethodExtractionTest - 2019.04.12 at 16h 44m 41s.xml">
       <configuration name="MethodExtractionTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MethodExtractionTest - 2019.04.12 at 17h 15m 04s.xml">
+      <configuration name="MethodExtractionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MethodExtractionTest - 2019.04.12 at 17h 15m 31s.xml">
+      <configuration name="MethodExtractionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MethodExtractionTest - 2019.04.12 at 17h 16m 35s.xml">
+      <configuration name="MethodExtractionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MethodExtractionTest - 2019.04.12 at 17h 25m 54s.xml">
+      <configuration name="MethodExtractionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MethodExtractionTest - 2019.04.12 at 17h 26m 52s.xml">
+      <configuration name="MethodExtractionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MethodExtractionTest - 2019.04.12 at 17h 35m 40s.xml">
+      <configuration name="MethodExtractionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MethodExtractionTest - 2019.04.12 at 17h 37m 14s.xml">
+      <configuration name="MethodExtractionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MethodExtractionTest - 2019.04.12 at 17h 46m 00s.xml">
+      <configuration name="MethodExtractionTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49655000" />
+    <option name="totallyTimeSpent" value="53233000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1910" y="25" width="1446" height="1019" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49718308" visible="true" weight="0.30952382" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49718308" visible="true" weight="0.1663113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="デザイナー" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -943,19 +1012,19 @@
       <window_info id="UI デザイナー" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39587852" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19739696" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32890365" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.43050846" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.41323212" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.329718" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32942432" />
+      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.14392324" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1186,37 +1255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chapter6/MethodExtraction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/chapter6/MethodExtractionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1228,6 +1266,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chapter6/MethodExtraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chapter6/MethodInlining.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#222#223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/chapter6/MethodExtractionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/chapter6/MethodInliningTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

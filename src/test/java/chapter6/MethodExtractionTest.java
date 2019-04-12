@@ -5,18 +5,21 @@ import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.Vector;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 public class MethodExtractionTest {
-    MethodExtraction methodExtraction = new MethodExtraction();
+    private MethodExtraction methodExtraction;
 
     @Before
     public void initialize() {
-        methodExtraction._orders.add(new Order(1.0));
-        methodExtraction._orders.add(new Order(2.0));
-        methodExtraction._orders.add(new Order(3.0));
+        methodExtraction = new MethodExtraction();
+        Vector<Order> orders = methodExtraction.getOrders();
+        orders.add(new Order(1.0));
+        orders.add(new Order(2.0));
+        orders.add(new Order(3.0));
     }
 
     @Test
@@ -53,8 +56,27 @@ public class MethodExtractionTest {
 
     @Test
     public void testGetOutstanding() {
-
         double outstanding = methodExtraction.getOutstanding();
         assertThat(6.0, is(outstanding));
+    }
+
+    @Test
+    public void testGetOutstanding1() {
+        MethodExtraction methodExtraction = new MethodExtraction();
+        double outstanding = methodExtraction.getOutstanding();
+        assertThat(0.0, is(outstanding));
+    }
+
+    @Test
+    public void testGetOutstanding2() {
+        double outstanding = methodExtraction.getOutstanding(1.2);
+        assertThat(7.2, is(outstanding));
+    }
+
+    @Test
+    public void testGetOutstanding3() {
+        MethodExtraction methodExtraction = new MethodExtraction();
+        double outstanding = methodExtraction.getOutstanding(1.2);
+        assertThat(1.2, is(outstanding));
     }
 }
